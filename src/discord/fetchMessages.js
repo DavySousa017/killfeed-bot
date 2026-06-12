@@ -2,7 +2,7 @@ require("dotenv").config();
 
 async function fetchMessages(channelId, limit = 10) {
   const url = `https://discord.com/api/v9/channels/${channelId}/messages?limit=${limit}`;
-  const token = process.env.BOT_TOKEN;
+  const token = process.env.DISCORD_SCRAPPER_TOKEN;
 
   try {
     const response = await fetch(url, {

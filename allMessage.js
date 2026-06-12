@@ -1,7 +1,7 @@
 const { updateKillFeed } = require("./src/api/updateKillFeed");
 const { updatePlayerData } = require("./src/api/updatePlayerData");
 require("dotenv").config();
-const token = process.env.BOT_TOKEN
+const token = process.env.DISCORD_SCRAPPER_TOKEN;
 
 (async () => {
   let before = "";

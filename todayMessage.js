@@ -1,7 +1,7 @@
 const { updatePlayerDataToday } = require("./src/api/updatePlayerDataToday");
 const { parseKillEvent } = require("./src/parser/logParser");
 require("dotenv").config();
-const token = process.env.BOT_TOKEN
+const token = process.env.DISCORD_SCRAPPER_TOKEN;
 
 (async () => {
   let before = "";
