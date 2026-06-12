@@ -1,8 +1,7 @@
 const { updatePlayerDataToday } = require("./src/api/updatePlayerDataToday");
 const { parseKillEvent } = require("./src/parser/logParser");
-
-const token =
-  "MTUwMDMxNDM3NDUxNzI5MzE4Nw.GVz5AM.YMYxfVszB0YOKiIY3q7e9dGoUsGNha7XHSmjCY";
+require("dotenv").config();
+const token = process.env.BOT_TOKEN
 
 (async () => {
   let before = "";

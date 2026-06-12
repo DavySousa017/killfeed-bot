@@ -1,8 +1,7 @@
 const { updateKillFeed } = require("./src/api/updateKillFeed");
 const { updatePlayerData } = require("./src/api/updatePlayerData");
-
-const token =
-  "MTUwMDMxNDM3NDUxNzI5MzE4Nw.GVz5AM.YMYxfVszB0YOKiIY3q7e9dGoUsGNha7XHSmjCY";
+require("dotenv").config();
+const token = process.env.BOT_TOKEN
 
 (async () => {
   let before = "";

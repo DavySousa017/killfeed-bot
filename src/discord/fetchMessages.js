@@ -1,7 +1,8 @@
+require("dotenv").config();
+
 async function fetchMessages(channelId, limit = 10) {
   const url = `https://discord.com/api/v9/channels/${channelId}/messages?limit=${limit}`;
-  const token =
-    "MTUwMDMxNDM3NDUxNzI5MzE4Nw.GVz5AM.YMYxfVszB0YOKiIY3q7e9dGoUsGNha7XHSmjCY"; // Substitua pelo seu token de autenticação
+  const token = process.env.BOT_TOKEN;
 
   try {
     const response = await fetch(url, {
